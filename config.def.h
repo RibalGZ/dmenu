@@ -13,8 +13,8 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeSel] =  { "#282828", "#458588" },
 	[SchemeOut] =  { "#000000", "#00ffff" },
 };
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+static unsigned int lines      = 0; /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
+static unsigned int lineheight = 27; /* -h option; minimum line height */
 
 /*
  * Characters not considered part of a word while deleting words
